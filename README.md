@@ -11,7 +11,7 @@
 
 ## dejarlo en modo observador 
 
-- tsc -w/--watch
+- tsc -w / --watch
 
 ## Crear archivo configuración de TypeScript
 
