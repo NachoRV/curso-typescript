@@ -1,16 +1,16 @@
 "use strict";
 (function () {
-    var mensaje = 'hola'; // const mensaje = 'hola'
-    var numero = 123;
-    var booleano = true;
-    var b = true;
-    var hoy = new Date();
-    var miArray = [];
-    var numberOrString;
+    const mensaje = 'hola'; // const mensaje = 'hola'
+    const numero = 123;
+    let booleano = true;
+    let b = true;
+    let hoy = new Date();
+    let miArray = [];
+    let numberOrString;
     numberOrString = 'hola';
     numberOrString = 1;
     numberOrString = true;
-    var persona = {
+    let persona = {
         nombre: 'Pepe',
         edad: 30
     };
