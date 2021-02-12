@@ -1,15 +1,15 @@
 "use strict";
 (function () {
-    const personaUno = {
+    var personaUno = {
         nombre: 'Nacho',
         apellidos: 'Royo-Villanova',
     };
-    const personaDos = {
+    var personaDos = {
         nombre: 'Patricia',
         apellidos: 'García',
         edad: 20
     };
-    const saludar = (persona) => console.log(`Hola ${persona.nombre}`);
+    var saludar = function (persona) { return console.log("Hola " + persona.nombre); };
     saludar(personaUno);
     saludar(personaDos);
 })();

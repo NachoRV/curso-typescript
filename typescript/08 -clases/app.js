@@ -1,30 +1,34 @@
 "use strict";
 (function () {
-    class Hero {
-        constructor(nombre, equipo, puedePelear, peleasGanadas) {
+    var Hero = /** @class */ (function () {
+        function Hero(nombre, equipo, puedePelear, peleasGanadas) {
             this.nombre = nombre;
             this.equipo = equipo;
             this.peleasGanadas = peleasGanadas;
             this.puedePelear = puedePelear;
         }
-    }
-    class Hero2 {
-        constructor(nombre, equipo, puedePelear = true, peleasGanadas = 0) {
+        return Hero;
+    }());
+    var Hero2 = /** @class */ (function () {
+        function Hero2(nombre, equipo, puedePelear, peleasGanadas) {
+            if (puedePelear === void 0) { puedePelear = true; }
+            if (peleasGanadas === void 0) { peleasGanadas = 0; }
             this.nombre = nombre;
             this.equipo = equipo;
             this.puedePelear = puedePelear;
             this.peleasGanadas = peleasGanadas;
         }
-        getPeleasGanadas() {
+        Hero2.prototype.getPeleasGanadas = function () {
             return this.peleasGanadas;
-        }
-    }
-    const ironman = new Hero('Ironman', 'Avengers', true, 0);
-    const thor = new Hero2('thor', 'Avengers');
+        };
+        return Hero2;
+    }());
+    var ironman = new Hero('Ironman', 'Avengers', true, 0);
+    var thor = new Hero2('thor', 'Avengers');
     console.log(ironman);
     console.log(thor);
     ironman.peleasGanadas = 3;
     thor.peleasGanadas = 5;
-    console.log(`peleas ganadas ${thor.getPeleasGanadas()}`);
+    console.log("peleas ganadas " + thor.getPeleasGanadas());
     console.log(ironman);
 })();

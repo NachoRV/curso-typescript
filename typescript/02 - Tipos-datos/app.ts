@@ -27,5 +27,9 @@ let persona = {
     apellidos: 'Garcia',
     edad: 30
   }
-
+// template literals 
+let ciudad = 'Madrid'
+let name = 'Nacho'
+let msg = 'usando template literals'
+console.log(`Hola ${name} te saludo desde ${ciudad}, ${msg}`);
 })();

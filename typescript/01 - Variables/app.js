@@ -1,9 +1,9 @@
 "use strict";
 (function () {
-    let variable = 'Nacho';
-    const apellido = 'Royo';
+    var variable = 'Nacho';
+    var apellido = 'Royo';
     if (true) {
-        let variable = 'Maria';
+        var variable = 'Maria';
     }
     console.log(variable);
 })();

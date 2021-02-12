@@ -1,10 +1,10 @@
 (function(){
 
- let variable = 'Nacho';
+ var variable = 'Nacho';
  const apellido = 'Royo'
 
  if(true) {
-   let variable = 'Maria';
+   var variable = 'Maria';
  }
 
  console.log(variable)

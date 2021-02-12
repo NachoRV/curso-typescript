@@ -1,16 +1,16 @@
 "use strict";
 (function () {
-    const mensaje = 'hola'; // const mensaje = 'hola'
-    const numero = 123;
-    let booleano = true;
-    let b = true;
-    let hoy = new Date();
-    let miArray = [];
-    let numberOrString;
+    var mensaje = 'hola'; // const mensaje = 'hola'
+    var numero = 123;
+    var booleano = true;
+    var b = true;
+    var hoy = new Date();
+    var miArray = [];
+    var numberOrString;
     numberOrString = 'hola';
     numberOrString = 1;
     numberOrString = true;
-    let persona = {
+    var persona = {
         nombre: 'Pepe',
         edad: 30
     };
@@ -24,4 +24,9 @@
         apellidos: 'Garcia',
         edad: 30
     };
+    // template literals 
+    var ciudad = 'Madrid';
+    var name = 'Nacho';
+    var msg = 'usando template literals';
+    console.log("Hola " + name + " te saludo desde " + ciudad + ", " + msg);
 })();
